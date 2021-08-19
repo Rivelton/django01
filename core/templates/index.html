@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pag Inicial - Index</title>
+    <link rel="stylesheet" href="{% static 'CSS/estilos.css' %}"
+</head>
+<body>
+<center>
+<img src="{% static 'Images/logo.png' %}"/>
+<h1>Produtos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+            </tr>
+        </thead>
+    <tbody>
+    {% for teste in produtos1 %}
+        <tr>
+            <td><a href="{% url 'produto' teste.id %}">{{ teste.nome }}</a></td>
+            <td>{{ teste.preco }}</td>
+            <td>{{ teste.estoque }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+    </table>
+
+<button onclick="teste();">Teste JS</button>
+<script type="text/javascript" src="{% static 'JS/teste.js' %}"></script>
+
+</center>
+</body>
+</html>
