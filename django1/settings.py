@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-yyi)d^r*%x2@xaunq^%4o4z3q2@1b7r2+m-y0m8*!#33z53pgc
 #Debug com False = modo de produção
 DEBUG = False
 
-ALLOWED_HOSTS = ['django1-rivelton.herokuapp.com/admin']
+ALLOWED_HOSTS = ['django1-rivelton.herokuapp.com']
 
 
 # Application definition
