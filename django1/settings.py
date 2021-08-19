@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-yyi)d^r*%x2@xaunq^%4o4z3q2@1b7r2+m-y0m8*!#33z53pgc
 # SECURITY WARNING: don't run with debug turned on in production!
 #Debug com valor True = modo desenvolvimento
 #Debug com False = modo de produção
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['django01-rivelton.herokuapp.com/admin']
 
